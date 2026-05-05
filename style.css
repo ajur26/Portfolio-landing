@@ -91,6 +91,8 @@ footer {
     font-size: 14px;
 }
 
+/* Projekty */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -119,7 +121,6 @@ footer {
     max-width: 280px;
     height: auto;
     margin-bottom: 20px;
-
     transition: 0.25s ease;
 }
 
@@ -150,6 +151,8 @@ footer {
 .project-card:hover img {
     transform: scale(1.05);
 }
+
+/* Kontakt */
 
 .contact {
     margin-top: 20px;
@@ -200,9 +203,45 @@ footer {
     color: #ffffff;
 }
 
+/* Strona projektu */
+
 .page-intro {
     max-width: 760px;
     margin: 30px auto 0;
+}
+
+.project-title-img {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.project-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.project-column {
+    text-align: left;
+}
+
+.project-column h2 {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.project-column h2:first-child {
+    margin-top: 0;
+}
+
+.project-column p {
+    max-width: none;
+    margin-top: 16px;
+    text-align: left;
 }
 
 .features {
@@ -214,17 +253,7 @@ footer {
 .features li {
     margin-top: 12px;
     color: #b0b0b0;
-}
-
-.features li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 9px;
-    width: 6px;
-    height: 6px;
-    background-color: #666;
-    border-radius: 50%;
+    text-align: left;
 }
 
 .project-links {
@@ -269,16 +298,16 @@ footer {
     height: 20px;
 }
 
-.project-title-img {
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-}
+/* RWD */
 
 @media (max-width: 900px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
 
@@ -331,5 +360,9 @@ footer {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-title-img {
+        max-width: 320px;
     }
 }
