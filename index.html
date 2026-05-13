@@ -10,6 +10,14 @@
 
 <body>
 
+    <div class="popup-overlay" id="popup">
+        <div class="popup">
+            <h2>Strona w trakcie budowy</h2>
+            <p>Zachęcam jednak do sprawdzenia dostępnych projektów oraz informacji, które są już opublikowane.</p>
+            <button onclick="closePopup()">Zamknij</button>
+        </div>
+    </div>
+
     <header>
         <h1>Andrzej Jur</h1>
         <p>Junior Software Engineer</p>
@@ -29,7 +37,7 @@
         </section>
 
         <section class="projects-grid">
-            <a href="envmonitor.html" class="project-card">
+            <a href="/projekty/envmonitor/" class="project-card">
                 <img src="assets/env_button_logo.webp" alt="ENV-MONITOR logo">
                 <span>ENV-MONITOR</span>
                 <p>System monitorowania temperatury, wilgotności, ciśnienia i CO.</p>
@@ -40,6 +48,12 @@
     <footer>
         <p>© 2026 Andrzej Jur</p>
     </footer>
+
+    <script>
+        function closePopup() {
+            document.getElementById("popup").classList.add("hidden");
+        }
+    </script>
 
 </body>
 </html>
