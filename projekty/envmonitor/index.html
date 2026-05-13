@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENV-MONITOR - Andrzej Jur</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Andrzej Jur</h1>
+        <p>Junior Software Engineer</p>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="/index.html">Projekty</a></li>
+                <li><a href="/aboutme.html">O mnie</a></li>
+                <li><a href="/contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-links">
+            <a href="/envmonitorapp/" class="project-button">Przejdź do aplikacji</a>
+
+            <a href="https://github.com/ajur26/env-monitor" target="_blank" class="project-button icon-button" aria-label="Kod projektu na GitHubie">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.47-2.382 1.235-3.22-.124-.303-.535-1.52.117-3.165 0 0 1.008-.322 3.3 1.23a11.49 11.49 0 013.003-.403c1.02.005 2.045.138 3.003.403 2.29-1.552 3.296-1.23 3.296-1.23.653 1.645.242 2.862.118 3.165.77.838 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.823 1.102.823 2.222 0 1.606-.015 2.9-.015 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.297 24 12c0-6.63-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </section>
+
+        <section class="page-intro">
+            <img src="assets/env_button_logo.webp" alt="ENV-MONITOR" class="project-title-img">
+        </section>
+
+        <section class="project-layout">
+            <div class="project-column">
+                <h2>Opis projektu</h2>
+                <p>
+                    ENV-MONITOR to webowa aplikacja IoT służąca do monitorowania warunków środowiskowych w pomieszczeniach.
+                    System zbiera dane z mikrokontrolera ESP32 oraz podłączonych czujników i prezentuje je w panelu użytkownika.
+                </p>
+
+                <p>
+                    Aplikacja umożliwia monitorowanie temperatury, wilgotności, ciśnienia oraz poziomu tlenku węgla.
+                    Dane są przesyłane z urządzenia pomiarowego do backendu, zapisywane w bazie danych i prezentowane
+                    w postaci aktualnych wartości, wykresów oraz historii pomiarów.
+                </p>
+
+                <h2>Technologie</h2>
+                <p>
+                    <strong>Frontend:</strong> React, JavaScript, HTML, CSS, Recharts<br>
+                    <strong>Backend:</strong> Python, Django, Django REST Framework<br>
+                    <strong>Baza danych:</strong> SQLite / PostgreSQL<br>
+                    <strong>IoT:</strong> ESP32, MicroPython<br>
+                    <strong>Czujniki:</strong> BME280, MQ-7<br>
+                    <strong>Inne:</strong> REST API, JWT, Git, GitHub, VPS, Nginx
+                </p>
+            </div>
+
+            <div class="project-column">
+                <h2>Najważniejsze funkcje</h2>
+                <ul class="features">
+                    <li>Odczyt danych z czujników środowiskowych</li>
+                    <li>Przesyłanie pomiarów z ESP32 do aplikacji</li>
+                    <li>Prezentacja aktualnych wartości</li>
+                    <li>Wykresy dla ostatniej godziny i 24 godzin</li>
+                    <li>Historia pomiarów</li>
+                    <li>System alarmów dla niebezpiecznych wartości</li>
+                    <li>Logowanie użytkownika</li>
+                    <li>Zabezpieczenie API</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Andrzej Jur</p>
+    </footer>
+
+</body>
+</html>
