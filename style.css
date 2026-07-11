@@ -25,6 +25,15 @@ header {
     padding: 80px 20px 40px;
 }
 
+.header-logo {
+    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+}
+
 main section:first-of-type {
     margin-top: 30px;
 }
